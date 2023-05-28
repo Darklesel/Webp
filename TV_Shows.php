@@ -11,11 +11,11 @@
       <h1>My Movie Database</h1>
       <nav>
         <ul>
-          <li><a href="index.php">Home</a></li>
-          <li><a href="movies.php">Movies</a></li>
-          <li><a href="TV_Shows.html">TV Shows</a></li>
-          <li><a href="contact_us.php">Contact Us</a></li>
-          <li><a href="Login.php">Login</a></li>
+          <li><a href="?page=home">Home</a></li>
+          <li><a href="?page=movies">Movies</a></li>
+          <li><a href="?page=TV_Shows">TV Shows</a></li>
+          <li><a href="?page=contact_us">Contact Us</a></li>
+          <li><a href="?page=login.">Login</a></li>
         </ul>
       </nav>
     </header>

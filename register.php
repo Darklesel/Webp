@@ -23,6 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$password = md5($password);
 	$Tableinput = "INSERT INTO users(username, email, password) VALUES('$username','$email','$password')";
 	mysqli_query($db,$Tableinput);
-	header('location: index.php');
+	header('location: /');
 }
 ?>

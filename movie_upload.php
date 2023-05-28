@@ -4,7 +4,7 @@ include_once 'header.php';
 
   // If the user is not logged in, redirect to the login page
   if (!isset($_SESSION["email"]) && !isset($_SESSION["username"])) {
-    header("Location: login.php");
+    header("Location: ?page=login");
     exit;
   }
 

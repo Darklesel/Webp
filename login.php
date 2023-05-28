@@ -2,8 +2,10 @@
 <html>
   <head>
     <title>Login</title>
+    
   </head>
   <body>
+    
     <h1>Login</h1>
     <form method="post" action="login.php">
       <label for="username">Username:</label>
@@ -43,7 +45,7 @@ session_start();
               $_SESSION['email'] = $data['email'];
               $_SESSION['id'] = $data['id'];
               $_SESSION['success'] = "You are now logged in";
-              header('location: index.php');
+              header('location: /');
             }else {
                 array_push($errors, "Wrong username/password combination");
             }
