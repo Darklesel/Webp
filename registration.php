@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Registration Form</title>
-</head>
-<body>
-	<h2>Registration Form</h2>
-	<form action="register.php" method="post">
-		<label for="username">Username:</label><br>
-		<input type="text" id="username" name="username"><br>
-		<label for="email">Email:</label><br>
-		<input type="email" id="email" name="email"><br>
-		<label for="password">Password:</label><br>
-		<input type="password" id="password" name="password"><br><br>
-		<input type="submit" value="Submit">
-	</form>
-</body>
-</html>
+<?php
+include_once('header.php') ?>
+<form action="register.php" method="post">
+  <div class="mb-3">
+    <label for="username" class="form-label">Username</label>
+    <input type="text" class="form-control" name="username" id="username">
+ </div>
+ <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" name="email" id="email">
+</div>
+  <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" class="form-control" name="password" id="password">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<?php
+include_once('footer.php') ?>

@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+//session_start();
 
 redirect();
 
@@ -8,7 +8,7 @@ function redirect()
 {
     include_once('config.inc.php');
 
-    echo '<p style="visibility:hidden">' . $_GET['page'] . '</p>';
+ echo '<p style="visibility:hidden">' . $_GET['page'] . '</p>';
 
     if (isset($_GET['page'])) 
     {

@@ -4,32 +4,33 @@ include_once 'header.php';
 include_once 'database_call.php';
 ?>
 
-      <h2>Contact Us</h2>
-      <form action="contact_us.php" method="post">
-
-          <label for="name">Name:</label>
+    <h2>Contact Us</h2>
+    <form action="contact_us.php" method="post">
+    <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
           <?php
           if (!isset($_SESSION['username'])) {
-              echo '<input type="text" id="name" name="name" value="Guest" required>';
+              echo '<input class="form-control" type="text" id="name" name="name" value="Guest" required>';
           } else {
-              echo '<input type="text" id="name" name="name" value="'.$_SESSION['username'].'" required>';
+              echo '<input class="form-control" type="text" id="name" name="name" value="'.$_SESSION['username'].'" required>';
           }
           ?>
-
-        <label for="email">Email:</label>
+</div>
+<div class="mb-3">
+    <label for="email" class="form-label">Email</label>
 
           <?php
           if (isset($_SESSION['email'])) {
-            echo '<input type="email" id="email" name="email" value="'.$_SESSION['email'].'" required>';
+            echo '<input class="form-control" type="email" id="email" name="email" value="'.$_SESSION['email'].'" required>';
           } else {
-              echo '<input type="email" id="email" name="email" required>';
+              echo '<input class="form-control" type="email" id="email" name="email" required>';
           }
           ?>
-        
+        </div>
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
         
-        <button type="submit">Submit</button>
+        <button class="btn btn-primary" type="submit">Submit</button>
       </form>
 
 <?php
